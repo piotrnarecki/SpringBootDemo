@@ -8,7 +8,7 @@ import java.time.Month;
 import java.util.List;
 
 @Service // @Component
-public class StudentService  {
+public class StudentService {
 
     private final StudentRepository studentRepository;
 
@@ -19,6 +19,12 @@ public class StudentService  {
 
     public List<Student> getStudents() {
         return studentRepository.findAll();
+    }
+
+    public void addNewStudent(Student student) {
+
+
+        System.out.println(student);
     }
 
 
